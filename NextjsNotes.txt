@@ -1,0 +1,23 @@
+<Image> component.
+========================
+1. No need to use react Suspense or react Lazy method for image in nextjs. Use these for loading other components. 
+2. Use placeholder="blur" and at the same time blurDataURL="data:image/jpeg....." like base64 image as a placeholder that will be shown during the image load.
+3. loading="lazy" for lazy loading image automatically.
+4. There are also some useful functions like 
+   quality={value from 0-100}
+  onLoadingComplete	onLoadingComplete={img => done())}	Function	-
+  onLoad	onLoad={event => done())}	Function	-
+  onError	onError(event => fail()}	Function	-
+
+ 
+
+ Error Handling .
+ ===================
+ 1. Create error.js file like loader.js that will be used for showing custom error page.
+ 2. If you want to add an error page in the root directory to handle all the error globally, then you have to add global-error.js instead of error.js file.
+
+
+Parallel Routes :
+===================
+
+
