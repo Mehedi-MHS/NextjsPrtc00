@@ -17,7 +17,12 @@
  2. If you want to add an error page in the root directory to handle all the error globally, then you have to add global-error.js instead of error.js file.
 
 
-Parallel Routes :
+Parallel Routing :
 ===================
+1. @FolderName convention.
+
+Parallel routes are created using named slots. Slots are defined with the @folder convention, and are passed to the same-level layout as props.
+
+    Slots are not route segments and do not affect the URL structure. The file path /@team/members would be accessible at /members.
 
 
