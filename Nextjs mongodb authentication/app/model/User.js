@@ -11,6 +11,5 @@ const userSchema = new mongoose.Schema({
 
 //This is important to manage existing models, otherwise you will get error.
 const User = mongoose.models.User || mongoose.model("User", userSchema);
-// here model name is 'User', and it will be converted to lowercase plural 'users'. Thats why we used
-// mongoose.models.users.
+// here model name is 'User', and it will be converted to lowercase plural 'user'
 export default User;
