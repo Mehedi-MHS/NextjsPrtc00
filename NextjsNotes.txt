@@ -26,3 +26,9 @@ Parallel routes are created using named slots. Slots are defined with the @folde
     Slots are not route segments and do not affect the URL structure. The file path /@team/members would be accessible at /members.
 
 
+Saving file in server using fs module:
+=======================================
+Before saving a file, use Buffer.from(fileData,encoding[optional]) to convert any type of data in binary format.
+Every file must be saved in binary format. 
+If you are converting a base64 data to binary format, use this:
+const binaryData = Buffer.from(base64Data,"base64")
